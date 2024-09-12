@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Hospital</h2>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#patients">Patients</a></li>
+            <li class="dropdown">
+                <a href="#staff" class="dropbtn">Staff</a>
+                <div class="dropdown-content">
+                    <a href="#doctors">Doctors</a>
+                    <a href="#nurses">Nurses</a>
+                </div>
+            </li>
+            <li><a href="#lab-reports">Lab Reports</a></li>
+            <li><a href="#my-team">My Team</a></li>
+            <li><a href="#chat">Chat</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="topnav">
+            <a href="#main">Main</a>
+            <a href="#labs">Labs</a>
+            <a href="#tests">Tests</a>
+            <a href="#visits">Visits</a>
+            <a href="#records">Records</a>
+        </div>
+        <div class="content">
+            <h2>Dashboard</h2>
+            <p>Welcome to the Hospital Management System</p>    
+        </div>
+        <div class="container">
+            <div class="widget" id="widget1">Widget 1</div>
+            <div class="widget" id="widget2">Widget 2</div>
+            <div class="widget" id="widget3">Widget 3</div>
+            <div class="widget" id="widget4">Widget 4</div>
+            <div class="widget" id="widget5">Widget 5</div>
+            <div class="widget" id="widget6">Widget 6</div>
+            <div class="widget" id="widget7">Widget 7</div>
+            <div class="widget" id="widget8">
+                <h2>Blood Pressure Tracker</h2>
+                <form id="bpForm">
+                    <label for="systolic">Systolic:</label>
+                    <input type="number" id="systolic" required>
+                    <label for="diastolic">Diastolic:</label>
+                    <input type="number" id="diastolic" required>
+                    <label for="pulse">Pulse:</label>
+                    <input type="number" id="pulse" required>
+                    <button type="submit">Add Reading</button>
+                </form>
+                <canvas id="bpChart"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
